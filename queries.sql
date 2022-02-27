@@ -30,7 +30,7 @@
      2018 from the "cities" table.
 */
 
--- your query here
+SELECT "city", "state", "population_estimate_2018" FROM "cities"  
 
 \echo ========= Problem 2.2 ====================================================
 \echo
