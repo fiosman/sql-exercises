@@ -61,7 +61,7 @@ SELECT "population_estimate_2018" FROM "cities" WHERE "city" = 'San Diego';
       Phoenix, Jacksonville, Charlotte, Nashville.
 */
 
- -- your query here
+ SELECT "population_estimate_2018", "city", "state" FROM "cities" WHERE "city" IN ('Phoenix', 'Jacksonville', 'Charlotte', 'Nashville');
 
 \echo ========= Problem 3.3 ====================================================
 \echo
