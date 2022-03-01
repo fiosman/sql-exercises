@@ -51,7 +51,7 @@ SELECT "name" FROM "airports";
      in 2018 of the city of San Diego.
 */
 
--- your query here
+SELECT "population_estimate_2018" FROM "cities" WHERE "city" = 'San Diego';
 
 \echo ========= Problem 3.2 ====================================================
 \echo
