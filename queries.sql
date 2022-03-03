@@ -71,7 +71,7 @@ SELECT "population_estimate_2018" FROM "cities" WHERE "city" = 'San Diego';
      city, state, and estimated population in 2018 columns.
 */
 
--- your query here
+SELECT "state", "city", "population_estimate_2018" FROM "cities" WHERE "population_estimate_2018" BETWEEN 800000 AND 900000;
 
 \echo ========= Problem 3.4 ====================================================
 \echo
@@ -81,7 +81,7 @@ SELECT "population_estimate_2018" FROM "cities" WHERE "city" = 'San Diego';
      1,000,000 people).
 */
 
--- your query here
+SELECT "city" FROM "cities" WHERE "population_estimate_2018" >= 1000000;
 
 \echo ========= Problem 3.5 ====================================================
 \echo
