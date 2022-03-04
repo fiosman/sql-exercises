@@ -115,7 +115,7 @@ SELECT "city" FROM "cities" WHERE "population_estimate_2018" >= 1000000;
      (Note: See the PostgreSQL doc on Pattern Matching for more information.)
 */
 
--- your query here
+SELECT "city", "state", "population_estimate_2018" FROM "cities" WHERE "city" LIKE 'S%';
 
 \echo ========= Problem 3.8 ====================================================
 \echo
