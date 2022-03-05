@@ -91,7 +91,7 @@ SELECT "city" FROM "cities" WHERE "population_estimate_2018" >= 1000000;
      uses a WHERE clause to return only the cities in Texas.
 */
 
--- your query here
+SELECT "city", ROUND("population_estimate_2018"/1000000.0, 1) || ' million' AS "2018_estimated_population" FROM "cities" WHERE "state" = 'Texas';
 
 \echo ========= Problem 3.6 ====================================================
 \echo
