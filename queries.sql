@@ -145,7 +145,7 @@ SELECT "city", "land_area_sq_mi_2016", "population_estimate_2018" FROM "cities" 
       in 2010.
 */
 
--- your query here
+SELECT "city", "population_estimate_2018", "population_census_2010" FROM "cities" WHERE ("population_estimate_2018" - "population_census_2010") > 200000;
 
 ---- Phase 4: Use a JOIN operation ---------------------------------------------
 -- Retrieve rows from multiple tables joining on a foreign key.
