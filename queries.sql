@@ -134,7 +134,7 @@ SELECT "city", "land_area_sq_mi_2016", "population_estimate_2018" FROM "cities" 
      name, the land area, and the estimated population in 2018.
 */
 
--- your query here
+SELECT "city", "land_area_sq_mi_2016", "population_estimate_2018" FROM "cities" WHERE ("population_estimate_2018" >= 2000000 OR "land_area_sq_mi_2016" >= 400) AND NOT ("population_estimate_2018" >= 2000000 AND "land_area_sq_mi_2016" >= 400);
 
 \echo ========= Problem 3.10 ===================================================
 \echo
