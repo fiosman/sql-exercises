@@ -96,15 +96,12 @@ SELECT "city", ROUND("population_estimate_2018"/1000000.0, 1) || ' million' AS "
 \echo ========= Problem 3.6 ====================================================
 \echo
 /*
-3.6) Write a SQL query to get the city and estimated population in 2018 in
-     number of millions (i.e. without zeroes at the end: 1 million), and that
-     uses a WHERE clause to return only the cities in Texas. Write a SQL query
-     that uses a WHERE clause to get the city, state, and estimated population
-     in 2018 of cities that are NOT in the following states:
+3.6) Write a SQL query that uses a WHERE clause to get the city, state, 
+     and estimated population in 2018 of cities that are NOT in the following states:
      New York, California, Texas.
 */
 
--- your query here
+SELECT "city", "state", "population_estimate_2018" FROM "cities" WHERE "state" NOT IN('New York', 'California', 'Texas');
 
 \echo ========= Problem 3.7 ====================================================
 \echo
