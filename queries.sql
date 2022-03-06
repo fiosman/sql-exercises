@@ -123,7 +123,7 @@ SELECT "city", "state", "population_estimate_2018" FROM "cities" WHERE "city" LI
      population in 2018.
 */
 
--- your query here
+SELECT "city", "land_area_sq_mi_2016", "population_estimate_2018" FROM "cities" WHERE "population_estimate_2018" >= 2000000 OR "land_area_sq_mi_2016" >= 400;
 
 \echo ========= Problem 3.9 ====================================================
 \echo
