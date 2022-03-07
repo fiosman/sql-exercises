@@ -160,7 +160,7 @@ SELECT "city", "population_estimate_2018", "population_census_2010" FROM "cities
      airport names and city names only.
 */
 
--- your query here
+SELECT "name", "city" FROM "cities" INNER JOIN "airports" ON ("airports"."city_id" = "cities"."id");
 
 \echo ========= Problem 4.2 ====================================================
 \echo
