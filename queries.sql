@@ -172,8 +172,7 @@ SELECT "name", "city" FROM "cities" INNER JOIN "airports" ON ("airports"."city_i
       rows.)
 */
 
--- your query here
-
+SELECT COUNT("city_id") FROM "cities" INNER JOIN "airports" ON ("airports"."city_id" = "cities"."id") WHERE "city" = 'New York';
 --------------------------------------------------------------------------------
 ---- Bonuses:
 --------------------------------------------------------------------------------
