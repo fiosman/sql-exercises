@@ -189,7 +189,7 @@ B.1) Apostrophe: Write a SQL query to get all three ID codes (the Federal
       include a single quote in a SQL query.)
 */
 
--- your query here
+SELECT "faa_id", "iata_id", "icao_id" FROM "airports" WHERE name = 'Chicago O''Hare International Airport';
 
 \echo ========= Problem B.2 ====================================================
 \echo
