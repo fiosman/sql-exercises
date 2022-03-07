@@ -202,7 +202,7 @@ B.2) Formatting Commas: Refactor Phase 2, Query #1 to turn the INT for estimated
        estimated population in 2018 from the "cities" table.
 */
 
--- your query here
+SELECT "city", "state", TO_CHAR("population_estimate_2018", 'FM9,999,999') FROM "cities"; 
 
 \echo ========= Problem B.3 ====================================================
 \echo
