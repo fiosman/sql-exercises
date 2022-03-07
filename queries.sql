@@ -218,7 +218,7 @@ B.3) Decimals and Rounding: Refactor Phase 3, Query #5 to turn number of
        in Texas.
 */
 
--- your query here
+SELECT "city", ROUND("population_estimate_2018"/1000000.0, 2) || ' million' AS "2018_estimated_population" FROM "cities" WHERE "state" = 'Texas';
 
 \echo ========= Problem B.4 ====================================================
 \echo
